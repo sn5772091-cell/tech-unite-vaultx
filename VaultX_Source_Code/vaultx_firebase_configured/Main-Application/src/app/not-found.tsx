@@ -1,0 +1,1 @@
+import Link from 'next/link';export default function NotFound(){return <main style={{minHeight:'100vh',display:'grid',placeItems:'center',background:'#080f1c',color:'#f8fafc',padding:24}}><section><p>404 · Page not found</p><h1>This page does not exist.</h1><Link style={{color:'#14b8a6'}} href="/">Return to VaultX</Link></section></main>}

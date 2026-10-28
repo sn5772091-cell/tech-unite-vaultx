@@ -1,0 +1,8 @@
+VaultX Ultimate — Portfolio Analytics & Financial Simulation Dashboard (PREVIEW BUILD)
+Publisher: Tech Unite
+
+A clean, responsive Next.js fintech demonstration product with a branded marketing homepage, interactive overview dashboard, sample asset allocation, portfolio workspace, demonstration markets, CSV reporting, and optional Firebase Authentication + Firestore user portfolio metadata.
+
+Included: editable Next.js/TypeScript source, Firestore rules, sample data, HTML setup documentation, Vercel settings, preview artwork.
+
+Important: This preview is not a complete commercial product. No actual cryptocurrency holdings, live feeds, financial deposits, withdrawals, investments, MLM, or trading execution. Advanced modules are not implemented. Update this description to accurately match final functionality before CodeCanyon submission.

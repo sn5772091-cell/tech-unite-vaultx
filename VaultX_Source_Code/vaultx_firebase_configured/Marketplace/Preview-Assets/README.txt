@@ -1,0 +1,1 @@
+These images are ORIGINAL CONCEPT VISUALS created from the proposed style, not screenshots captured from a deployed, running Next.js application. Capture real screenshots after npm installation and Vercel deployment before Envato submission.

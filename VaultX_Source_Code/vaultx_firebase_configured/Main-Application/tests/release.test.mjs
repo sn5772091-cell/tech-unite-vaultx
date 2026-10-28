@@ -1,0 +1,11 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync,existsSync} from 'node:fs';
+import path from 'node:path';
+const root=process.cwd();
+const read=(f)=>readFileSync(path.join(root,f),'utf8');
+test('commercial package declares Next and Firebase',()=>{const p=JSON.parse(read('package.json'));assert.ok(p.dependencies.next);assert.ok(p.dependencies.firebase);assert.ok(p.scripts.build);});
+test('Firestore rules default deny and owner-scoped writes',()=>{const rules=read('firestore.rules');assert.match(rules,/request.auth.uid == uid/);assert.match(rules,/allow read, write: if false/);assert.match(rules,/allow update: if false/);});
+test('demo mode requires explicit opt-in or no Firebase config',()=>{const s=read('src/lib/firebase.ts');assert.match(s,/NEXT_PUBLIC_VAULTX_DEMO/);assert.match(s,/!isConfigured/);});
+test('admin clearly discloses it is not implemented',()=>{assert.match(read('src/app/admin/page.tsx'),/UI showcase only/);});
+test('deployment files and docs exist',()=>{for(const name of ['vercel.json','firebase.json','.env.example','README.md','next.config.ts'])assert.ok(existsSync(path.join(root,name)),name);});

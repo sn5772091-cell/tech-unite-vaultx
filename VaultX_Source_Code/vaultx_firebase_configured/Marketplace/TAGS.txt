@@ -1,0 +1,1 @@
+nextjs, react, typescript, fintech, portfolio, dashboard, firebase, firestore, analytics, vercel, financial, ui, simulation, responsive

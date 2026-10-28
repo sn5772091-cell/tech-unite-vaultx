@@ -1,0 +1,14 @@
+# Submission checklist
+- [ ] Actual code builds from a clean install with locked dependencies
+- [ ] Real deployed Vercel preview URL verified including iframe constraints
+- [ ] Public demo functions on mobile and desktop
+- [ ] Real screenshots captured from running deployment
+- [ ] Product documentation publicly accessible online
+- [ ] All advertised features are implemented
+- [ ] Tests and security review passed
+- [ ] Firebase rules validated and authorized domains configured
+- [ ] No secrets/demo credentials in ZIP
+- [ ] Marketplace dimensions/format verified at upload
+- [ ] Dependency and visual asset rights verified
+- [ ] Publisher support information and accurate license terms added
+- [ ] Current submission eligibility verified
